@@ -1,0 +1,7 @@
+<launch>
+	<node pkg="aruco_marker_detection" 		exec="aruco_marker_detection_node" name="aruco_marker_detection_node" output="screen">
+		<param name="rgb_topic" 	     	value="/camera/rgb/image_raw" />
+		<param name="calibration_file" 	 	value="/home/aaron/Pictures/xtion_calibration/test_rgbd_calibration.txt" />
+		<param name="aruco_marker_length" 	value="0.055" />
+	</node>
+</launch>
